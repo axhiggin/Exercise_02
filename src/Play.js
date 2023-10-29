@@ -50,7 +50,7 @@ class Play extends Phaser.Scene {
         //add walls
         let wallA = this.physics.add.sprite(0, height / 4, 'wall')
         wallA.setX(Phaser.Math.Between(0 + wallA.width/2, width - wallA.width/2))
-        wallA.setPushable(true)
+        wallA.setPushable(false)
         wallA.setCollideWorldBounds(true)
         wallA.setBounce(1)
         wallA.setVelocityX(100)
